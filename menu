@@ -1,5 +1,5 @@
 #!/bin/bash
-# Created by D1NFUCK3R
+# Created by 097-026-7262
 if [[ -e /etc/debian_version ]]; then
 	OS=debian
 	RCLOCAL='/etc/rc.local'
