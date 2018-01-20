@@ -1,0 +1,22 @@
+#!/bin/bash
+read -p "ป้อนชื่อผู้ใช้ที่คุณต้องการยกเลิกการ แบน: " username
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+# proses mengganti passwordnya
+passwd -u $username
+clear
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""| lolcat
+echo -e "|        Account Information SSH      |" | boxes -d dog | lolcat
+echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
+echo -e "Username ${blue}$username${NC} ยกเลิกการ แบน เรียบร้อย ${green}UNBAN${NC}." | lolcat
+  echo -e "รหัสผ่านสำหรับ Username ${blue}$username${NC} เปิดใช้ตามปกติ" | lolcat
+echo -e "===========================================" | lolcat
+echo -e "   Admin & Detail  :                              "| lolcat
+echo -e "   HACKING-DDOS-PHISING-SPAM-TORENT        " | lolcat
+echo -e "   D1NFUCK3R & TOP GUN               "| lolcat
+echo -e "   Script by D1NFUCK3R             "| lolcat
+echo -e "===========================================" | lolcat
+fi

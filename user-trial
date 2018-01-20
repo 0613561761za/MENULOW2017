@@ -1,0 +1,57 @@
+#!/bin/bash
+clear
+echo "Please Wait..."
+sleep 0.5
+echo "Generating Account..."
+sleep 0.5
+echo "Generating Host..."
+sleep 0.5
+echo "Generating Username..."
+sleep 0.5
+echo "Generating Password..."
+sleep 1
+MYIP=$(wget -qO- ipv4.icanhazip.com)
+passrandom=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1)
+
+username=trial
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+# proses mengganti passwordnya
+  echo -e "$passrandom\n$passrandom" | passwd $username
+  clear
+  echo " "
+  echo -e ""| lolcat
+echo -e "|       New Account Information SSH      |" | boxes -d dog | lolcat
+echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
+  echo "------------------------------" | lolcat
+  echo "   Host     : $MYIP" | lolcat
+  echo "   Username : $username" | lolcat
+  echo "   Password : $passrandom" | lolcat
+  echo "   Port     : 22,80,109,143,443" | lolcat
+  echo "------------------------------" | lolcat
+  echo " "
+  
+else
+  useradd trial
+  usermod -s /bin/false trial
+  egrep "^$username" /etc/passwd >/dev/null
+  echo -e "$passrandom\n$passrandom" | passwd $username
+  clear
+  echo " "
+  echo -e ""| lolcat
+echo -e "|       New Account Information SSH      |" | boxes -d dog | lolcat
+echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
+  echo "------------------------------" | lolcat
+  echo "   Host     : $MYIP" | lolcat
+  echo "   Username : $username" | lolcat
+  echo "   Password : $passrandom" | lolcat
+  echo "   Port     : 22,80,109,143,443" | lolcat
+  echo "------------------------------" | lolcat
+  echo " "
+echo -e "===========================================" | lolcat
+echo -e "   Admin & Detail  :                              "| lolcat
+echo -e "   HACKING-DDOS-PHISING-SPAM-TORENT        " | lolcat
+echo -e "   D1NFUCK3R & TOP GUN               "| lolcat
+echo -e "   Script by D1NFUCK3R             "| lolcat
+echo -e "===========================================" | lolcat
+fi

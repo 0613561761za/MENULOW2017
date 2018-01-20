@@ -1,0 +1,46 @@
+#!/bin/bash
+if [ -e "/var/log/auth.log" ]; then
+        LOG="/var/log/auth.log";
+fi
+if [ -e "/var/log/secure" ]; then
+        LOG="/var/log/secure";
+fi
+
+case $1 in
+dropbear)
+ps ax|grep dropbear > /tmp/pid.txt
+cat $LOG |  grep -i "Password auth succeeded" > /tmp/sukses.txt
+perl -pi -e 's/Password auth succeeded for//g' /tmp/sukses.txt
+perl -pi -e 's/dropbear/PID/g' /tmp/sukses.txt
+;;
+openssh)
+clear
+ps ax|grep sshd > /tmp/pid.txt
+cat /var/log/auth.log | grep -i ssh | grep -i "Accepted password for" > /tmp/sukses.txt
+perl -pi -e 's/Accepted password for//g' /tmp/sukses.txt
+perl -pi -e 's/sshd/PID/g' /tmp/sukses.txt
+;;
+*)
+echo -e "ใช้คำสั่ง ${red}user-log dropbear${NC} เพื่อตรวจสอบบันทึกของผู้ใช้ Dropbear"
+echo -e "ใช้คำสั่ง ${red}user-log openssh${NC} เพื่อตรวจสอบบันทึกของผู้ใช้ Openssh"
+echo " "
+echo -e "===========================================" | lolcat
+echo -e "   Admin & Detail  :                              "| lolcat
+echo -e "   HACKING-DDOS-PHISING-SPAM-TORENT        " | lolcat
+echo -e "   D1NFUCK3R & TOP GUN               "| lolcat
+echo -e "   Script by D1NFUCK3R             "| lolcat
+echo -e "===========================================" | lolcat
+exit 1
+;;
+esac
+echo "การตรวจสอบบันทึกผู้ใช้" > /tmp/hasil.txt
+echo "(วันที่ - ชม. - Host VPS-  Process ID - UsernameD - IP address" >> /tmp/hasil.txt
+echo "===============================================" >> /tmp/hasil.txt
+cat /tmp/pid.txt | while read line;do
+set -- $line
+cat /tmp/sukses.txt | grep $1 >> /tmp/hasil.txt
+done
+echo "=================================================" >> /tmp/hasil.txt
+echo "D1NFUCK3R & TOP GUN" >> /tmp/hasil.txt
+echo "Script Created By D1NFUCK3R" >> /tmp/hasil.txt
+cat /tmp/hasil.txt

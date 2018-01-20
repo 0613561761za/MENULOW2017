@@ -1,0 +1,16 @@
+#!/bin/bash
+read -p "ป้อนชื่อผู้ใช้ที่คุณต้องการลบ: " username
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+# proses mengganti passwordnya
+userdel -f $username
+clear
+  echo -e ""| lolcat
+echo -e "|        Account Information SSH      |" | boxes -d dog | lolcat
+echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
+  echo -e "-----------------------------------------------" | lolcat
+  echo -e "Username ${blue}$username${NC} ถูกลบแล้ว ${red}HAPUS${NC}." | lolcat
+  echo -e "-----------------------------------------------" | lolcat
+else
+    exit 1
+fi
