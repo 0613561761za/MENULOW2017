@@ -21,7 +21,7 @@ if [ $? -eq 0 ]; then
   clear
   echo " "
   echo -e ""| lolcat
-echo -e "|       New Account Information SSH      |" | boxes -d dog | lolcat
+echo -e "|       NEW ACCOUNT INFORMATION SSH      |" | boxes -d dog | lolcat
 echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
   echo "------------------------------" | lolcat
   echo "   Host     : $MYIP" | lolcat
@@ -39,7 +39,7 @@ else
   clear
   echo " "
   echo -e ""| lolcat
-echo -e "|       New Account Information SSH      |" | boxes -d dog | lolcat
+echo -e "|       NEW ACCOUNT INFORMATION SSH      |" | boxes -d dog | lolcat
 echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
   echo "------------------------------" | lolcat
   echo "   Host     : $MYIP" | lolcat
@@ -49,9 +49,9 @@ echo -e "============[[-SERVER-PREMIUM-]]===========" | lolcat
   echo "------------------------------" | lolcat
   echo " "
 echo -e "===========================================" | lolcat
-echo -e "   Admin & Detail  :                              "| lolcat
+echo -e "   Admin & Detail  :                       "| lolcat
 echo -e "   HACKING-DDOS-PHISING-SPAM-TORENT        " | lolcat
-echo -e "   D1NFUCK3R & TOP GUN               "| lolcat
-echo -e "   Script by D1NFUCK3R             "| lolcat
+echo -e "   HEREBIRD & OCSPANEL.INFO                "| lolcat
+echo -e "   Script by 097-026-7262                  "| lolcat
 echo -e "===========================================" | lolcat
 fi
