@@ -25,10 +25,10 @@ echo -e "ใช้คำสั่ง ${red}user-log dropbear${NC} เพื่�
 echo -e "ใช้คำสั่ง ${red}user-log openssh${NC} เพื่อตรวจสอบบันทึกของผู้ใช้ Openssh"
 echo " "
 echo -e "===========================================" | lolcat
-echo -e "   Admin & Detail  :                              "| lolcat
+echo -e "   Admin & Detail  :                       "| lolcat
 echo -e "   HACKING-DDOS-PHISING-SPAM-TORENT        " | lolcat
-echo -e "   D1NFUCK3R & TOP GUN               "| lolcat
-echo -e "   Script by D1NFUCK3R             "| lolcat
+echo -e "   Herebird & Ocspanel.info                "| lolcat
+echo -e "   Script by 097-026-7262                  "| lolcat
 echo -e "===========================================" | lolcat
 exit 1
 ;;
@@ -41,6 +41,6 @@ set -- $line
 cat /tmp/sukses.txt | grep $1 >> /tmp/hasil.txt
 done
 echo "=================================================" >> /tmp/hasil.txt
-echo "D1NFUCK3R & TOP GUN" >> /tmp/hasil.txt
-echo "Script Created By D1NFUCK3R" >> /tmp/hasil.txt
+echo "HEREBIRD & OCSPANEL.INFO" >> /tmp/hasil.txt
+echo "Script Created By 097-026-7262" >> /tmp/hasil.txt
 cat /tmp/hasil.txt
