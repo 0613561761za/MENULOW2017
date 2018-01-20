@@ -67,7 +67,7 @@ echo "" | tee -a log-install.txt
 
 if [[ $vps = "zvur" ]]; then
 	echo "FUCO YOU" | tee -a log-install.txt
-	echo "https://www.facebook.com/Ceolnw/" | tee -a log-install.txt
+	echo "https://www.เฮียเบิร์ด.com" | tee -a log-install.txt
 else
 	echo "FACEBOOK GROUP" | tee -a log-install.txt
 	echo "https://www.facebook.com/ceolnw" | tee -a log-install.txt
