@@ -32,15 +32,15 @@ for((i=1; i<=$totalaccounts; i++ ))
            then
 			:
        else
-       echo "echo "D1NFUCK3R- Username : $username sudah expired Pada Tanggal: $tgl $bulantahun dan telah di delete pada tanggal: $hariini "" >> /usr/local/bin/deleteduser
+       echo "echo "Ocspanel.info - Username : $username sudah expired Pada Tanggal: $tgl $bulantahun dan telah di delete pada tanggal: $hariini "" >> /usr/local/bin/deleteduser
 	   echo "Username $username yang expired pada $tgl $bulantahun telah berhasil dihapus dari sistem pada $hariini"
        userdel $username
        fi
 done
 echo " "
 echo -e "===========================================" | lolcat
-echo -e "   Admin & Detail  :                              "| lolcat
+echo -e "   Admin & Detail  :                       "| lolcat
 echo -e "   HACKING-DDOS-PHISING-SPAM-TORENT        " | lolcat
-echo -e "   D1NFUCK3R & TOP GUN               "| lolcat
-echo -e "   Script by D1NFUCK3R             "| lolcat
+echo -e "   Hrerbird.com & Oscpanel.info            "| lolcat
+echo -e "   Script by 097-026-7262                  "| lolcat
 echo -e "===========================================" | lolcat
