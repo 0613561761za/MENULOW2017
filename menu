@@ -14,7 +14,7 @@ fi
 color1='\e[031;1m'
 color2='\e[34;1m'
 color3='\e[0m'
-echo -e "--------------- MENU BY OCSPANEL.INFO  ---------------" | lolcat
+echo -e "------- MENU BY OCSPANEL.INFO  -------" | lolcat
 	echo ""
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
@@ -30,9 +30,9 @@ echo -e "--------------- MENU BY OCSPANEL.INFO  ---------------" | lolcat
 	echo -e "\e[032;1mTotal amount of swap:\e[0m $swap MB"
 	echo -e "\e[032;1mSystem uptime:\e[0m $up"
 	echo -e "============================== "
-	echo -e "คำสั่ง ทั้งหมด เลือกใช้เพียงแค่กด ตัวเลข"
+	echo -e "คำสั่ง ทั้งหมด เลือกใช้เพียงแค่กด ตัวเลข" lolcat
 	echo -e ""
-	echo -e "เกี่ยวกับการสร้างบัญชี VPN SSH"
+	echo -e "เกี่ยวกับการสร้างบัญชี VPN SSH" lolcat
 	echo -e "============================== "
 	echo -e "${color1}1${color3}. ${color2} สร้างบัญชี SSH & OpenVPN${color3}"
 	echo -e "${color1}2${color3}. ${color2} สร้างบัญชีแบบสุ่ม SSH/OpenVPN${color3}"
@@ -43,7 +43,7 @@ echo -e "--------------- MENU BY OCSPANEL.INFO  ---------------" | lolcat
 	echo -e "============================== "
 	
 	echo -e ""
-	echo -e "เกี่ยวกับการ Ban และเตะบัญชีที่เชื่อมต่อเกินกำหนด"
+	echo -e "เกี่ยวกับการ Ban และเตะบัญชีที่เชื่อมต่อเกินกำหนด" lolcat
 	echo -e "============================== "
 	echo -e "${color1}7${color3}. ${color2} เตะบัญชีที่เชื่อมต่อเกินกำหนด${color3}"
 	echo -e "${color1}8${color3}. ${color2} ดูรายชื่อผู้ใช้ที่ถูก Ban ${color3}"
@@ -52,7 +52,7 @@ echo -e "--------------- MENU BY OCSPANEL.INFO  ---------------" | lolcat
 	echo -e "============================== "
 	
 	echo -e ""
-	echo -e "เกี่ยวกับ รายละเอียดของบัญชี"
+	echo -e "เกี่ยวกับ รายละเอียดของบัญชี" lolcat
 	echo -e "============================== "
 	echo -e "${color1}11${color3}. ${color2}ดูรายละเอียดของบัญชี SSH & OpenVPN${color3}"
 	echo -e "${color1}12${color3}. ${color2}แสดงรายชื่อบัญชีทั้งหมด SSH & OpenVPN${color3}"
@@ -65,7 +65,7 @@ echo -e "--------------- MENU BY OCSPANEL.INFO  ---------------" | lolcat
 	echo -e "============================== "
 	
 	#echo -e ""
-	#echo -e "เกี่ยวกับการสร้างบัญชี PPTP"
+	#echo -e "เกี่ยวกับการสร้างบัญชี PPTP" lolcat
 	#echo -e "============================== "
 	#echo -e "${color1}18${color3}. ${color2}สร้างบัญชี PPTP${color3}"
 	#echo -e "${color1}19${color3}. ${color2}ลบบัญชี PPTP${color3}"
@@ -75,7 +75,7 @@ echo -e "--------------- MENU BY OCSPANEL.INFO  ---------------" | lolcat
 	#echo -e "============================== "
 	
 	echo -e ""
-	echo -e "เกี่ยวกับระบบของ Server"
+	echo -e "เกี่ยวกับระบบของ Server" lolcat
 	echo -e "============================== "
 if [[ "$OS" = 'debian' ]]; then 
 	echo -e "${color1}18${color3}. ${color2}เปลี่ยน Port Dropbear${color3}"
@@ -102,14 +102,14 @@ echo -e "${color1}30${color3}. ${color2}เปลี่ยน Password VPS${colo
 echo -e "============================== "
 
 	echo -e ""
-	echo -e "อื่นๆ เพิ่มเติม"
+	echo -e "อื่นๆ เพิ่มเติม" lolcat
 	echo -e "============================== "
 	echo -e "${color1}31${color3}. ${color2}แก้ไขข้อความการแสดงเมื่อเชื่อมต่อ SSH${color3}"
 	echo -e "${color1}32${color3}. ${color2}แก้ไขข้อความการแสดงเมื่อเชื่อมต่อ VPS ${color3}."
 	echo -e "============================== "
 
 	echo -e ""
-	echo -e "อื่นๆ เพิ่มเติม"
+	echo -e "อื่นๆ เพิ่มเติม" lolcat
 	echo -e "============================== "
 	echo -e "${color1}33${color3}. ${color2}Speedtest${color3}"
 	echo -e "${color1}34${color3}. ${color2}Benchmark${color3}"
