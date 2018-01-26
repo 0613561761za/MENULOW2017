@@ -36,12 +36,7 @@ done
 if [ $flag -eq 0 ]
 then
    echo  "ขออภัยเฉพาะ IP @ Password ที่ลงทะเบียนเท่านั้นที่สามารถใช้สคริปต์นี้ได้!
-ติดต่อ: HERE BIRD (097-026-7262) Facebook : m.me/ceolnw"
-
-rm -f /root/iplist.txt
-
-rm -f /root/Rasta-OCS.sh
-	
+ติดต่อ: HERE BIRD (097-026-7262) Facebook : m.me/ceolnw"	
 	exit 1
 sleep 1
 clear
