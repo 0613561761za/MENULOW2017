@@ -9,6 +9,7 @@ echo "Checking Permision..."
 sleep 0.3
 # GO TO ROOT
 MYIP=$(wget -qO- ipv4.icanhazip.com);
+myip=$(wget -qO- ipv4.icanhazip.com);
 
 flag=0
 	
