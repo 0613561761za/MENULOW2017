@@ -1,5 +1,5 @@
 #!/bin/bash
-# Created by http://www.vps-murah.net
+# Created by http://www.เฮียเบิร์ด.com
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
@@ -37,7 +37,7 @@ done
 if [ $flag -eq 0 ]
 then
    echo  "ขออภัยเฉพาะ IP @ Password ที่ลงทะเบียนเท่านั้นที่สามารถใช้สคริปต์นี้ได้!
-ติดต่อ: HERE BIRD (097-026-7262) Facebook : m.me/ceolnw"	
+ติดต่อ: HERE BIRD (097-026-7262) Facebook : m.me/ceolnw" | lolcat
 	exit 1
 sleep 1
 clear
