@@ -220,7 +220,8 @@ vnstat
 elif test $x -eq 37; then
 log-install
 elif test $x -eq 38; then
-wget d1nfuck3r.ga/d1nfuck3r/repo/update-d1nfuck3r.sh -O - -o /dev/null|sh
+echo ""
+echo "สคริปต์นี้จะยังไม่มีการอัพเดตในเร็ว ๆ นี้"
 elif test $x -eq 39; then
 clear
 echo ""
