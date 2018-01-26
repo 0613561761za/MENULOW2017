@@ -109,7 +109,7 @@ echo -e "-------------------------------------------------------" | lolcat
 	#echo -e "${color1}38${color3}. ${color2}สร้างบัญชี Proxy${color3}"
 	echo -e " [+] |${color1}44${color3}| ${color3}Update Script${color3}"
 echo -e "-------------------------------------------------------" | lolcat
-read -p " [>] เลือกคำสั่งที่ต้องการ (พิมพ์เลข): " x
+read -p " [?] เลือกคำสั่งที่ต้องการ (พิมพ์เลข): " x
 echo -e "-------------------------------------------------------" | lolcat
 if test $x -eq 1; then
 user-add
@@ -215,6 +215,7 @@ log-install
 elif test $x -eq 44; then
 echo ""
 echo " [>] ติดตามได้ที่ www.facebook.com/ceolnw"
+echo ""
 elif test $x -eq ""; then
 clear
 echo ""
