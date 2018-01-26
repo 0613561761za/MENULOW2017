@@ -47,7 +47,7 @@ echo -e "     Port Squid   : 8080,3128      " | lolcat
 echo -e "     Server Day      : $masa_aktif Day" | lolcat
 echo -e "     Warning       : Max 2 login          " | lolcat
 echo -e "-------------------------------------------" | lolcat
-echo -e "     Exp.   : $(date -d "$AKTIF days" +"%d-%m-%Y")" | lolcat
+echo -e "     Exp.   : $tanggal_expired_display" | lolcat
 echo -e "===========================================" | lolcat
 echo -e "   Admin & Detail  :                              "| lolcat
 echo -e "   HACKING-DDOS-PHISING-SPAM-TORENT        " | lolcat
