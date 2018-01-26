@@ -149,31 +149,23 @@ user-delete-expired
 elif test $x -eq 18; then
 user-add-pptp
 elif test $x -eq 19; then
-user-delete-pptp
-user-add-pptp+
+user-add-pptp
 elif test $x -eq 20; then
-user-detail-pptp
-user-delete-pptp+
+user-delete-pptp
 elif test $x -eq 21; then
-user-login-pptp
-user-detail-pptp+
+user-detail-pptp
 elif test $x -eq 22; then
-alluser-pptp
-user-login-pptp+
+user-login-pptp
 elif test $x -eq 23; then
-edit-port-dropbear
-alluser-pptp+
+alluser-pptp
 elif test $x -eq 24; then
-edit-port-openvpn
-edit-port-dropbear+
+edit-port-dropbear
 elif test $x -eq 25; then
-edit-port-openssh
-edit-port-openvpn+
+edit-port-openvpn
 elif test $x -eq 26; then
-edit-port-squid
-edit-port-openssh+
+edit-port-openssh
 elif test $x -eq 27; then
-edit-port-squid+
+edit-port-squid
 elif test $x -eq 28; then
 	if [[ "$OS" = 'debian' ]]; then 
 		service ssh restart 
