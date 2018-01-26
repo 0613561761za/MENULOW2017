@@ -64,15 +64,15 @@ echo -e "------- MENU BY OCSPANEL.INFO  -------" | lolcat
 	echo -e "${color1}44${color3}. ${color2}ล็อกผู้ใช้ SSH & OpenVPN ที่หมดอายุแล้ว ${color3}"
 	echo -e "============================== "
 	
-	#echo -e ""
-	#echo -e "เกี่ยวกับการสร้างบัญชี PPTP" lolcat
-	#echo -e "============================== "
-	#echo -e "${color1}18${color3}. ${color2}สร้างบัญชี PPTP${color3}"
-	#echo -e "${color1}19${color3}. ${color2}ลบบัญชี PPTP${color3}"
-	#echo -e "${color1}20${color3}. ${color2}ดูรายละเอียดบัญชี PPTP${color3}"
-	#echo -e "${color1}21${color3}. ${color2}เช็คบัญชีที่ออนไลน์ PPTP${color3}"
-	#echo -e "${color1}22${color3}. ${color2}ดูรายชื่อบัญชีทั้งหมดของ PPTP${color3}"
-	#echo -e "============================== "
+	echo -e ""
+	echo -e "เกี่ยวกับการสร้างบัญชี PPTP" lolcat
+	echo -e "============================== "
+	echo -e "${color1}18${color3}. ${color2}สร้างบัญชี PPTP${color3}"
+	echo -e "${color1}19${color3}. ${color2}ลบบัญชี PPTP${color3}"
+	echo -e "${color1}20${color3}. ${color2}ดูรายละเอียดบัญชี PPTP${color3}"
+	echo -e "${color1}21${color3}. ${color2}เช็คบัญชีที่ออนไลน์ PPTP${color3}"
+	echo -e "${color1}22${color3}. ${color2}ดูรายชื่อบัญชีทั้งหมดของ PPTP${color3}"
+	echo -e "============================== "
 	
 	echo -e ""
 	echo -e "เกี่ยวกับระบบของ Server" lolcat
@@ -156,16 +156,16 @@ elif test $x -eq 16; then
 expireduser
 elif test $x -eq 17; then
 user-delete-expired
-#elif test $x -eq 18; then
-#user-add-pptp
-#elif test $x -eq 19; then
-#user-delete-pptp
-#elif test $x -eq 20; then
-#user-detail-pptp
-#elif test $x -eq 21; then
-#user-login-pptp
-#elif test $x -eq 22; then
-#alluser-pptp
+elif test $x -eq 18; then
+user-add-pptp
+elif test $x -eq 19; then
+user-delete-pptp
+elif test $x -eq 20; then
+user-detail-pptp
+elif test $x -eq 21; then
+user-login-pptp
+elif test $x -eq 22; then
+alluser-pptp
 elif test $x -eq 18; then
 edit-port-dropbear
 elif test $x -eq 19; then
